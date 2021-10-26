@@ -1,0 +1,200 @@
+﻿* {
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Gotham,"Helventica Neue". Helvetica, Arial, sans-serif;
+    line-height:1.3em;
+    font-size:1em;
+    background:#0067af url(images/fondo.jpg) top repeat-x;
+}
+
+.container {
+    width:80%;
+    max-width:1000px;
+    background:#fff;
+    margin: 20px auto;
+    border-radius:2%;
+}
+
+header{
+    width:100%;
+    float:left;
+}
+
+header h1{
+    margin-left:20px;
+    float:left;
+}
+header h2{
+    float:right;
+    font-size: 1.3em;
+    margin-top:110px;
+    margin-right:50px;
+}
+/*COMIENZO MENU PRINCIPAL*/
+nav{
+    width:100%;
+    clear:both;
+    padding:10px 0;
+    margin-bottom:50px;
+}
+
+nav ul{
+    width:100%;
+    list-style:none;
+    border-top:5px solid #d79128;
+}
+nav ul li {
+    text-align: center;
+    width: 25%;
+    float: left;
+    background: #c2b114;
+    border-right:1px #fff solid;
+    box-sizing: border-box;
+ }
+nav ul li:hover, nav ul li.actual{
+    background:#6b5808;
+}
+nav ul li.ultima{
+    border-right:none
+
+}
+nav ul li a:link, nav ul li a:visited{
+    color:#fff;
+    text-decoration:none;
+    display:block;
+    padding:10px 0;
+}
+
+/*FIN DEL MENU PRINCIPAL*/
+
+/*COMIENZO DEL SUBMENU*/
+nav ul li ul{
+    width:250px;
+    margin-top:1px;
+    position:absolute;
+    background:#fff;
+    display:none;
+    border-top:none;
+}
+nav ul li:hover > ul{
+    display:block;
+}
+nav ul li ul li{
+    width:100%;
+    border-bottom:1px solid #fff;
+    background:#a17d17;
+}
+/* FIN SUBMENU*/
+
+aside{
+    width:30%;
+    float:right;
+    margin-left:20px;
+    margin-top:20px;
+}
+aside article{
+    width:90%;
+    margin-bottom:50px;
+    border-bottom:dotted 1px #808080;
+    padding-bottom:10px
+}
+aside article img {
+    width:250px;
+
+}
+section{
+    padding:20px;
+}
+section h1{
+    font-size:1.5em;
+    margin-bottom:1em;
+}
+section p{
+    line-height:1.5em;
+}
+
+.mapa{
+    border:1px solid #6C6465;
+    width:630px;
+    height:350px;
+    -moz-box-shadow: 1px 2px 5px #000000;
+    -webkit-box-shadow: 1px 2px 5px #000000;
+    box-shadow:1px 2px 5px #000000;
+}
+
+footer{
+    width:100%;
+    clear:both;
+    text-align:center;
+    padding-bottom:10px;
+}
+footer p{
+    font-size:0.7em;
+    color:#645f60;
+}
+
+footer a:link, footer a:visited {
+     color: #645f60;
+    }
+
+footer a:hover{
+    text-decoration:none;
+}
+
+/*ESTILO PAGINA ENLACE*/
+
+ul.enlaces{
+    margin-left: 30px;
+}
+
+ul.enlaces li{
+    list-style: none;
+    background: url(images/check.png) no-repeat left top;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+ul.enlaces li a:link, ul.enlaces li a:visited{
+    color:#0180ff;
+    text-decoration: underline;
+}
+
+ul.enlaces li a:hover{
+    text-decoration: none;
+}
+
+.calltoaction{
+    width: 200px;
+    height: 75px;
+    background:#C71D51;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright:33px;
+    -moz-border-radius-bottomleft:33px;
+    -moz-border-radius-bottomright:4px;
+    -webkit-border-top-left-radius:0px;
+    -webkit-border-top-right-radius:33px;
+    -webkit-border-bottom-left-radius:33px;
+    -webkit-border-bottom-right-radius:0px;
+    border-top-left-radius:0px;
+    border-top-right-radius:33px;
+    border-bottom-left-radius:33px;
+    border-bottom-right-radius:0px;
+    margin-top: 40px;
+    margin-left: 200px;
+    -moz-box-shadow: 4px 0px 11px #000000;
+    -webkit-box-shadow: 4px 0px 11px #000000;
+    box-shadow: 4px 0px 11px #000000;
+
+
+}
+
+.calltoaction a:link, .calltoaction a:visited{
+    color:#fff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding-top:18px;
+}

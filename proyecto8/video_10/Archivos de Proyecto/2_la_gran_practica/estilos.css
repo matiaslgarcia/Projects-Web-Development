@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:#fff;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+h1{
+	font-size:1.3em;
+	font-weight:normal;
+}
+
+.supercontainer{
+	width:100%;
+	height:100%;
+}
+
+.container2{
+	width:900px;
+	margin:30px auto;
+	padding:14px;
+	min-height:600px;
+	background:#ede0b9;
+	position:relative;
+}
+
+.content{
+	width:100%;
+	float:left;
+	min-height:512px;
+}
+
+.content img{
+	float:left;
+}
+
+#formulario{
+	color:#37352f;
+}
+
+#formulario input{
+	border:dashed 1px #fff;
+	background:#fff;
+	border-radius:75px;
+	-moz-border-radius:75px;
+	-webkit-border-radius:75px;
+	color:#000;
+}
+
+/*SELECTORES PARA EL PLACEHOLDER*/
+::-webkit-input-placeholder {color:#37352f; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:11px;}
+::-moz-placeholder {color:#37352f; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:11px;}
+input:-moz-placeholder {color:#37352f; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:11px;}
+#formulario input:placeholder {color:#37352f; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:11px;}
+
+
+#formulario .arriba{
+	width:710px;
+	padding:10px 0 0 0;
+	margin:0;
+	float:right;
+	border:none;
+}
+
+#formulario input.entero{
+	width:690px;
+	height:12px;
+	margin:5px 0 0 0;
+}
+
+#formulario input.mitad{
+	width:330px;
+	height:12px;
+	margin:5px 0 0 0;
+}
+
+.l{
+	float:left;
+}
+
+.r{
+	float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

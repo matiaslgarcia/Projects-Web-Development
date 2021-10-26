@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Gotham, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    background: rgba(125,228,234,1.00);
+}
+nav{
+    float:left;
+    margin: 20px 0 0 20px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: block;
+    width: 200px;
+    background: #fff;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 3px #000;
+}
+nav ul li:hover{
+    background: rgba(228,228,228,1.00);
+}
+nav ul li a:link, nav ul li a:visited {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: center;
+    color:rgba(28,76,221,1.00);
+}
+nav ul li a:hover{
+    color:#000;
+}
+/*Estilos CLASES*/
+.mascara{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 99999;
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.mascara:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal{
+    width: 400px;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    border-radius: 5px;
+    background: #fff;
+    transition: all 500ms ease-in;
+}
+
+.modal img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.modal h2{
+    text-align: center;
+    font-weight: lighter;
+    color: #891416;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.modal p{
+    font-size: 1em;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.close{
+    background: #606061;
+    color: #fff;
+    line-height: 25px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.close:hover{
+    background: #faac58;
+    color: #222;
+}
+/*Comportamiento y Animaciones*/
+.abajo{
+    margin: 0 auto;
+}
+
+.mascara:target .abajo{
+    margin: 10% auto;
+}
+
+.rotar{
+    margin: 10% auto;
+    transform: scale(-5,-5);
+}
+
+.mascara:target .rotar{ 
+    transform: rotate(360deg) scale(1,1);
+}
+.redimensionar{
+    margin: 10% auto;
+    width: 0;
+    height: 0;
+}
+.mascara:target .redimensionar{
+    width: 400px;
+    height: 400px;
+}
+.arriba{
+    margin: 0 auto;
+    transform: translateY(0) ;
+}
+.mascara:target .arriba{
+    transform:translateY(200px) rotate(360deg);
+}
+
+/*ESTILOS FOOTER*/
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    background: url(jugador_futbol.png) repeat-x;
+    bottom: 0;
+    opacity: 0.6;
+}

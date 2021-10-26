@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Etiquetas Avanzadas 1</title>
+        <style type="text/css">
+            blockquote{
+                color: #888;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-style: italic;
+                line-height: 1.3em;
+                margin: 20px auto;
+                width: 500px;
+                font-size:1.2em;
+                padding:0.25em 40px ;
+                position: relative;
+            }
+
+            blockquote:before{
+                content: '\201C';
+                color: #ccc;
+                font-size: 80px;
+                display: block;
+                position: absolute;
+                left: -5px;
+                top: 20px;
+                font-style: italic;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            blockquote cite{
+                color: #ccc;
+                display: block;
+                font-size: 18px;
+                margin-top: 15px;
+                text-align: right;
+            }
+            span{
+                font-size: 13px;
+                color: #484747;
+            }
+
+            cite:before{
+                content: "\2014 \2009";
+            }
+            h2{
+                text-align: center;
+                font-size: 1.2em;
+                font-family: Gotham, "Helvetica Neue",Arial, Helvetica, sans-serif;
+            }
+            mark{
+                background: pink;
+                font-weight: bold;
+                font-style: normal;
+                color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <blockquote>
+            Que es la vida? Un frenesi. Que es la vida? Una ilusion, una sombra, una ficcion; y el mayor bien es pequeño;
+            que toda la vida es un sueño, y los sueños, sueños son.
+            <cite>
+            Pedro Calderon de la Barca <span>(1600-1681) Dramaturgo y Poeta Español</span>
+            </cite>
+        </blockquote>
+        <h2>Las citas <mark>son muy importantes</mark></h2>
+    </body>
+</html>

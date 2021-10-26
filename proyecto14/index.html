@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GOT:Game Of Thrones</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background: #000;
+        }
+
+        .container{
+            width: 720px;
+            height: 500px;
+            margin: 35px auto;
+            background: url(images/bg.jpg) no-repeat;
+            position: relative;
+            z-index:50;
+            display: none;
+        }
+        .mascara{
+            position: absolute;
+            width: 100%;
+            height: 700px;
+            top: 520px;
+            z-index: 100;
+            background: url(images/fondo_superior.png) no-repeat center top;
+        }
+
+        a:hover img{
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            transition: all 1.5s ease;
+            -webkit-transition: all 1.5s ease;
+            -moz-transition: all 1.5s ease;
+        }
+        .tyrion img{
+	        position:absolute;
+	        height:340px;
+	        left:100px;
+	        bottom:-30px;
+            z-index: 100;
+            display: none;
+        }
+        .cersei img{
+            position: absolute;
+            width: 300px;
+            left: 280px;
+            bottom: -20px;
+            display: none;
+        }
+        .john img{
+            position: absolute;
+            width: 400px;
+            top: 0px;
+            left: -120px;
+            bottom: -20px;
+            display: none;
+        }
+        .daenerys img{
+            position: absolute;
+            width: 300px;
+            right: -50px;
+            bottom: -50px;
+            display: none;
+        }
+        .tyrion-name{
+            position: absolute;
+            z-index: 200;
+            left: 280px;
+            bottom: 50px;
+            display: none;
+        }
+        .john-name{
+            position: absolute;
+            z-index: 200;
+            top: 230px;
+            left: -90px;
+            display: none;
+        }
+
+        .daenerys-name{
+            position: absolute;
+            z-index: 200;
+            top: 350px;
+            right: -90px ;
+            display: none;
+        }
+
+        .cersei-name{
+            position: absolute;
+            z-index: 230;
+            top: 160px;
+            left: 280px;    
+            display: none;
+        }
+        .sangre{
+            background: url(images/sangre.png) no-repeat center bottom;
+            width: 100%;
+            height: 700px;
+            position: absolute;
+            top: -850px;
+            z-index: 200;
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(
+            function()
+            {
+                //Aparicion de fondo
+                setTimeout(function()
+                    {
+                        $('.container').fadeIn(1500);
+                    }
+                    ,1000)
+                //Aparece Cersei
+                 setTimeout(function()
+                    {
+                         $('.cersei img').fadeIn(2000);
+                    }
+                    ,2000)
+                //Aparece tyrion
+                setTimeout(function()
+                    {
+                         $('.tyrion img').fadeIn(2000);
+                    }
+                    ,3500)
+                //Aparece John Snow
+                setTimeout(function()
+                    {
+                        $('.john img').fadeIn(2000);
+                    }
+                    ,4000)
+                //Aparece Daenerys
+                setTimeout(function()
+                    {
+                         $('.daenerys img').fadeIn(2000);
+                    }
+                    ,5500)
+
+                //Aparece Nombre tyrion
+                $('.tyrion').mouseover(function()
+                    {
+                        $('.tyrion-name').fadeIn(1000);
+                        $('.tyrion-name').animate({bottom:"60px"}, 'slow');
+                    }
+                );
+                //Aparece Nombre cersei
+                $('.cersei').mouseover(function()
+                    {
+                        $('.cersei-name').fadeIn(1000);
+                        $('.cersei-name').animate({top:"150px"}, 'slow');
+                    }
+                );
+                //Aparece Nombre john
+                $('.john').mouseover(function()
+                    {
+                        $('.john-name').fadeIn(1000);
+                        $('.john-name').animate({top:"220px"}, 'slow');
+                    }
+                );
+                //Aparece Nombre daenerys
+                $('.daenerys').mouseover(function()
+                    {
+                        $('.daenerys-name').fadeIn(1000);
+                        $('.daenerys-name').animate({top:"340px"}, 'slow');
+                    }
+                );
+                //Convierto mascara en un boton
+                $('.mascara').click(function()
+                    {
+                       $('.sangre').animate({top:"0"},5000);
+                    }
+                    
+                    
+                );
+            }
+        );
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <span class="tyrion-name"><img src="images/tyrion_name.png"></span>
+        <span class="cersei-name"><img src="images/cersei_name.png"></span>
+        <span class="daenerys-name"><img src="images/daenerys_name.png"></span>
+        <span class="john-name"><img src="images/johnnieve_name.png"></span>
+
+        <a href="#" class="tyrion">
+            <img src="images/tyrion.png"/>
+        </a>
+        <a href="#" class="cersei">
+            <img src="images/cersei.png" >
+        </a>
+        <a href="#" class="daenerys">
+            <img src="images/daenerys.png">
+        </a>
+        <a href="#" class="john">
+            <img src="images/john_nieve.png">
+        </a>
+        <!--Fin del Container-->
+    </div>
+    <div class="mascara">
+
+    </div>
+    <div class="sangre">
+    </div>
+</body>
+</html>

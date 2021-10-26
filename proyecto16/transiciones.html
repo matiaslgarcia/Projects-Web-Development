@@ -1,0 +1,73 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Transiciones</title>
+        <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: lighter;
+            margin-top: 15px;
+        }
+
+        ul{
+            width: 900px;
+            margin: 15px auto;
+            list-style: none;
+        }
+        ul li{
+            padding: 15px;
+            margin-bottom:10px ;
+            text-align: center;
+            border-radius: 20px;
+        }
+        ul li:hover{
+            font-size: 1.2em;
+            margin-left: 20px;
+
+        }
+        ul li.linear{
+            background: #55e1c5;
+            transition:all 1s linear;
+        }
+
+        ul li.ease{
+            background: #d8c63f;
+            transition:all 1s ease;
+        }
+
+        ul li.easein{
+            background: #b2e494;        
+            transition:all 1s ease-in;
+        }
+
+        ul li.easeout{
+            background: #eccfb1;
+            transition:all 1s ease-out ;
+        }
+        ul li.easein-out{
+            background: #e298dc;
+            transition: all 1s ease-in-out;
+        }
+        </style>
+    </head>
+    <body>
+      <h1>Diferentes Transiciones</h1>
+      <ul>
+          <li class="linear"><strong>Linear:</strong>  Mantiene la misma velocidad de principio a fin.</li>
+          <li class="ease"><strong>Ease:</strong> Comienzo lento, luego rapido y termina lento</li>
+          <li class="easein"><strong>Ease-In:</strong> Comienza lento, y despues mantiene la velocidad</li>
+          <li class="easeout"><strong>Ease-Out:</strong> Mantiene la velocidad, con final lento</li>
+          <li class="easein-out"><strong>Ease-In.Out:</strong> Comienzo y fin Lentos, muy similar a Ease, solo que este ultimo empieza mas rapido de lo que finaliza</li>
+      </ul>  
+    </body>
+</html>

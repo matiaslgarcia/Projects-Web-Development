@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario 1</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+    <h1>Formulario de Contacto</h1>
+    <form action="" method="post" class="primer_formulario" onSubmit="return validacion()" id="general">
+
+    <label>
+        <span>Nombre:</span>
+        <input type="text" name="nombre" id="nombre"/>
+    </label>
+    
+    <label>
+    	 <span>Tipo de Consulta:</span>
+         <select name="tipo_consulta" id="tipo_consulta">
+         	<option value="Laboral">Laboral</option>
+            <option value="Personal">Personal</option>
+            <option value="Otros">Otros</option>
+         </select>
+    </label>
+    
+    <label>
+        <span>Email:</span>
+        <input type="email" name="email" id="email"/>
+    </label>
+    
+    <label>
+        <span>Teléfono:</span>
+        <input type="text" name="telefono" id="telefono" />
+    </label>
+    
+    <label>
+        <span>Mensaje:</span>
+        <textarea  name="mensaje" id="mensaje"></textarea>
+    </label> 
+	<input type="checkbox" id="acepto"/> Al enviar el siguiente correo acepta la política de protección de MIEMPRESA conforme a la Ley Orgánica 15/1999, de 13 de diciembre. Si desea oponerse, acceder, cancelar o rectificar sus datos, póngase en contacto con nosotros, dirigiendo mensaje al correo electrónico: info@micorreo.com.<br/>
+        <input type="submit" class="button" value="Enviar" /> 
+    </label>    
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    background: url(bg.png) #c6f0f5;
+}
+.container {
+    width: 80%;
+    background: #fff;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0px 2px 14px #000;
+    -moz-box-shadow: 0px 2px 14px #000;
+    -webkit-box-shadow: 0px 2px 14px #000;
+}
+
+header{
+    width:100%;
+    background:#1c9adb;
+}
+h1{
+    text-align:center;
+    font-size:1.5em;
+    font-family:Gotham,'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding:20px 0;
+    color:#fff;
+    font-weight:lighter;
+}
+
+/*ESTILO DEL FORMULARIO*/
+
+.form_contact ul{
+    width:580px;
+    list-style:none;
+}
+
+.form_contact li{
+    padding:12px;
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+
+.form_contact label {
+    color: #55555;
+    display: block;
+    float: left;
+    font-family: Gotham,'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size:0.8em;
+    width:140px;
+    font-weight:bold;
+}
+.form_contact input{
+    height:20px;
+    width:220px;
+    padding:5px 8px;
+}
+
+.form_contact textarea{
+    width:300px;
+    padding:8px;
+}
+
+.form_contact button{
+    margin-left:140px;
+}
+/*ESTILOS VISUALES DE LOS ELEMENTOS*/
+
+.form_contact input, .form_contact textarea {
+    border: 1px solid #aaa;
+    box-shadow: 0px 3px #ccc, 0px 10px #eee inset;
+    border-radius: 2px;
+    color: #888;
+    font-family: Gotham,'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    padding-right: 30px;
+    transition: padding .25s;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+}
+.form_contact input:focus, .form_contact textarea:focus{
+    background:#fff;
+    border:1px solid #555;
+    box-shadow:0 0 3px #aaa;
+    padding-right: 80px;
+}
+
+.form_contact input.rango{
+    border:none;
+    transition:none;
+    height:5px;
+    padding:0px;
+
+}
+
+.form_contact input.rango:focus {
+    border: none;
+    transition: none;
+    height: 5px;
+    padding: 0px;
+    box-shadow:none;
+ }
+
+/*ESTILOS DE VALIDACION*/
+
+.form_contact input:required:valid, .form_contact textarea:required:valid{
+    box-shadow:0px# 0px 5px #5cd053;
+    border-color:#28921f;
+}
+
+.form_contact input:required:invalid, .form_contact textarea:required:invalid {
+    box-shadow: 0px# 0px 5px #d45252;
+    border-color: #b03535;
+}
+
+button.submit {
+    font-family: Gotham,'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding:9px 17px;
+    font-size:0.7em;
+    color:#444;
+    border:none;
+    border-radius:10px;
+}
+
+button.submit:hover{
+    cursor:pointer;
+    color:#3768b9;
+    opacity:0.7em;
+}

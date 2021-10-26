@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Animaciones 1</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            font-family: Gotham, Arial, Helvetica, sans-serif;
+        }
+        ul{
+            list-style: none;
+        }
+
+        ul li{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            background: #28a745;
+            margin: 30px;
+            position: relative;
+            left:0;
+            text-align:center;
+            color: #fff;
+            font-size: 1.5em;
+        }
+
+        .infinita{
+            animation-name: AnimInfinita;
+            animation-duration:3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate ;
+            animation-timing-function:linear ;
+            animation-delay: 1s;
+            transition:all 3s ease-in-out;
+        }
+        @keyframes AnimInfinita{
+            0%{
+                left: 0;
+                border-radius: 0px;
+            }
+            50%{
+                background-color: #e67e22;
+                transform: rotate(0deg);
+            }
+            100%{
+                left: 500px;
+                border-radius: 40px;
+                background-color:#16a085;
+                transform: rotate(360deg);
+
+            }
+        }
+        .hover{
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+        .hover:hover{
+            animation-name: AnimHover;
+            cursor: pointer;
+        }
+        @keyframes AnimHover{
+            0%{
+                transform: scale3d(1,1,1);
+            }
+            
+            25%{
+               text-shadow: 0 -6px 3px #fff;
+                box-shadow: 0px 0px 5px #000;
+            }
+            50%{
+                transform: scale3d(1.1,1.1,1.1);
+                background-color: #7BD38E;
+                box-shadow: 0px 0px 15px #000;
+            }
+
+            75%{
+                text-shadow: 0 -6px 3px #fff;
+                box-shadow: 0px 0px 5px #000;
+            }
+            100%{
+                text-shadow: 0 0px 3px #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="infinita">Continua</li>
+        <li class="hover">Efecto Hover</li>
+    </ul>
+</body>
+</html>

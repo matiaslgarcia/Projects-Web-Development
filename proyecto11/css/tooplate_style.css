@@ -1,0 +1,479 @@
+/*
+Template 2058 metallic slider 
+http://www.tooplate.com/view/2058-metallic-slider
+*/
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300);
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #666464;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+	line-height: 1.4em; 
+	background-color:#EFF4C5;
+	background-image:url(../images/cesped.png);
+	background-repeat: repeat-x;
+	background-position: bottom center;
+	background-attachment:fixed;
+}
+
+a, a:link, a:visited { 
+	color: #02A151;; 
+	font-weight: normal; 
+	text-decoration: none; 
+	font-style: italic; 
+}
+
+a:hover { 
+	text-decoration: underline; 
+}
+
+a.more { 
+	display: inline-block; 
+	width: 90px; 
+	height: 13px; 
+	background: url(../images/tooplate_read_more.png) no-repeat; 
+}
+
+p { 
+	margin: 0 0 20px 0; 
+	padding: 0; 
+}
+
+img { 
+	border: #fff 4px solid; 
+}
+
+blockquote { 
+	font-style: italic; 
+	margin: 0 0 0 10px;
+}
+
+cite { 
+	font-weight: bold; 
+	color:#e9e7e0; 
+}
+
+cite a, cite a:link, cite a:visited  { 
+	font-size: 12px; 
+	text-decoration: none; 
+	font-style: normal; 
+}
+
+cite span { 
+	font-weight: 400; 
+	color: #666464; 
+}
+
+.image_fl { 
+	float: left; 
+	margin: 3px 20px 5px 0; 
+}
+
+.image_fr { 
+	float: right; 
+	margin: 3px 0 5px 20px; 
+}
+
+h1, h2, h3, h4, h5, h6 { color: #e9e7e0; font-weight: normal; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif }
+h1 { font-size: 48px; margin: 0 0 30px; padding: 5px 0 }
+h2 { font-size: 20px; margin: 0 0 25px; padding: 3px 0 }
+h3 { font-size: 18px; margin: 0 0 15px; padding: 0; color:#02A151;}
+h4 { font-size: 16px; margin: 0 0 10px; padding: 0; color:#02A151}
+h5 { font-size: 14px; margin: 0 0 10px; padding: 0;  }
+h6 { font-size: 10px; margin: 0 0 5px; padding: 0; }
+
+h2.primera{
+	color:#006831;
+}
+
+h2.segunda{
+	color:#006831;
+}
+
+h2.tercera{
+	color:#006831;
+}
+
+h2.cuarta{
+	color:#006831;
+}
+
+h2.quinta{
+	color:#006831;
+}
+
+.cleaner { clear: both }
+.h10 { height: 10px }
+.h20 { height: 20px }
+.h30 { height: 30px }
+.h40 { height: 40px }
+.h50 { height: 50px }
+
+.float_l { float: left }
+.float_r { float: right }
+
+#tooplate_main { 
+	width: 968px;
+	margin: 0 auto;
+	padding: 35px 0 200px;
+}
+
+#site_title { 
+	width: 275px; 
+	height: 194px; 
+	margin: 0 auto 20px; 
+}
+
+#site_title h1 { 
+	margin: 0; 
+	padding: 0; 
+}
+
+#site_title h1 a { 
+	display: block; 
+	font-size: 12px; 
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	width: 275px; 
+	height: 194px; 
+	color: #acacac; 
+	text-indent: -10000px; 
+	background: url(../images/imge.png) no-repeat center left; 
+}
+
+#tooplate_content {
+	width: 938px;
+	height: 478px;
+	padding: 15px;
+	background: url(../images/tooplate_content.png) no-repeat
+}
+
+.kwicks {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.kwicks li{
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	cursor: pointer;
+	
+}
+
+.kwicks li.uno{
+	background: url(../images/slider_bg_1.png) no-repeat left;
+}
+
+.kwicks li.dos{
+	background: url(../images/slider_bg_1.png) no-repeat left;
+}
+
+.kwicks li.tres{
+	background: url(../images/slider_bg_1.png) no-repeat left;
+}
+
+.kwicks li.cuatro{
+	background: url(../images/slider_bg_1.png) no-repeat left;
+}
+
+.kwicks li.cinco{
+	background: url(../images/slider_bg_1.png) no-repeat left;
+}
+
+
+
+
+#tooplate_content li {
+	float: left;
+	position: relative;
+	width: 188px;
+	height: 478px;
+}
+
+
+
+.kwicks li span.header {
+	position: absolute;
+	bottom: 15px;
+	left: 10px;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	color:#fff;
+}
+.kwicks li span.slideno {
+	position: absolute;
+	top: 45px;
+	left: -90px;
+	width: 310px;
+	height: 90px;
+	
+}
+
+#tooplate_content #home { 
+}
+#tooplate_content #home.active { 
+}
+#tooplate_content #about {
+}
+#tooplate_content #about.active {
+}
+#tooplate_content #social {
+}
+#tooplate_content #social.active {
+}
+#tooplate_content #portfolio { 
+}
+#tooplate_content #portfolio.active { 
+}
+#tooplate_content #contact {
+}
+#tooplate_content #contact.active {
+	margin-right: 0px;	
+}
+
+span.slideno {
+	color:#fff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:25px;
+	text-align:left;
+	transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+}
+
+#tooplate_content #home span.slideno {
+	
+}
+
+#tooplate_content #about span.slideno {
+	
+}
+
+#tooplate_content #social span.slideno {
+	
+}
+
+#tooplate_content #portfolio span.slideno { 
+	
+}
+
+#tooplate_content #contact span.slideno {
+	
+}
+
+
+#tooplate_content li .inner {
+	width: 570px; 
+	padding: 40px 40px 40px 100px; 
+	overflow: hidden;
+}
+
+#tooplate_content li ul { 
+	margin: 0 0 0 10px; 
+	padding: 0; 
+	list-style: decimal-leading-zero; 
+}
+
+#tooplate_content li ul li {
+	width: auto;
+	height: auto;
+	float: none;
+	margin: 0;
+	padding: 0 0 5px 18px;
+	background: url(../images/tooplate_list.png) scroll 0px 7px no-repeat
+}
+
+#tooplate_content li ul.social_links {
+	margin-top: 40px
+}
+
+#tooplate_content li ul.social_links li {
+	width: auto;
+	height: auto;
+	float: left;
+	width: 180px;
+	margin: 0 0 40px;
+	padding: 0;
+	background: none;
+}
+#tooplate_content li ul.social_links li:hover {
+	opacity: 0.7;
+}
+#tooplate_content li ul.social_links li a {
+	display: block;
+	height: 33px;
+	padding: 15px 0 0 60px;
+	font-size: 14px;
+	color: #fff;
+	background-position: left;
+	background-repeat: no-repeat
+}
+
+#tooplate_content li #gallery {
+	margin-top: 40px
+}
+
+#tooplate_content li #gallery li {
+		width: auto;
+		height: auto;
+		float: left;
+		width: 125px;
+		height: 125px;
+		margin: 0 5px 5px 0;
+		padding: 0;
+		background: none;
+}
+
+#tooplate_content li #gallery li a {
+	display: block;
+}
+
+#tooplate_content li ul.social_links li a.facebook {
+	background-image: url(../images/facebook.png) 
+}
+
+#tooplate_content li ul.social_links li a.Instagram {
+	background-image: url(../images/inst.jpg)
+}
+
+
+#tooplate_content li ul.social_links li a.twitter {
+	background-image: url(../images/twitter.png) 
+}
+
+
+#tooplate_content li ul.social_links li a.gmail {
+	background-image: url(../images/gmail.png)
+}
+
+#contact_form { 
+	padding: 0; 
+	width: 410px; 
+}
+
+#contact_form form { 
+	margin: 0px; 
+	padding: 0px; 
+}
+
+#contact_form form .input_field { 
+	width: 300px; 
+	padding: 5px; 
+	color: #02A151;
+	font-weight: bold;
+	border: 1px solid #444444;  
+	background: #f6eeee; 
+	margin-bottom: 10px; 
+	font-family: Tahoma, Geneva, sans-serif; 
+	font-size: 13px;
+}
+
+#contact_form form label { 
+	display: block;
+	font-size: 13px; 
+}
+
+#contact_form form textarea { 
+	clear: both; 
+	width: 398px; 
+	height: 100px; 
+	padding: 5px; 
+	color: #02A151;
+	font-weight: bold;
+	border: 1px solid #444444;  
+	background: #f6eeee;  
+	font-family: Tahoma, Geneva, sans-serif; 
+	font-size: 13px;
+}
+
+#contact_form form .submit_btn { 
+	font-size: 12px; 
+	background: #02A151; 
+	color: #000; 
+	cursor:pointer; 
+	border: 1px solid #000; 
+	padding: 5px 14px; 
+}
+
+.col_half { width: 270px }
+
+.ocre{
+	color:#02A151;
+}
+.azul{
+	color:#02A151;
+}
+
+.verde{
+	color:#02A151;
+}
+
+.borde_verde{
+	border:3px solid #006a33;
+	box-shadow: 2px 3px 17px #363636;
+	-moz-box-shadow: 2px 3px 17px #363636;
+	-webkit-box-shadow: 2px 3px 17px #363636;
+}
+
+.borde_t{
+	border:2px solid #006a33;
+	box-shadow: 2px 3px 5px #006a33;
+	-moz-box-shadow: 2px 3px 5px #006a33;
+	-webkit-box-shadow: 2px 3px 5px #006a33;
+}
+
+.redes{
+	border:2px solid #006a33;
+	box-shadow: 2px 3px 5px #006a33;
+	-moz-box-shadow: 2px 3px 5px #006a33;
+	-webkit-box-shadow: 2px 3px 5px #006a33;
+	width:500px;
+	float: right;
+	margin-right: 50px;
+}
+
+.contacto2{
+	color:#02A151 !important;
+}
+
+a.contacto2:link, a.contacto2:visited{
+	color:#02A151 !important;
+	text-decoration: underline !important;
+
+}
+a.contacto2:hover{
+	text-decoration: none !important;
+}
+
+.validacion{
+	text-align: right;
+	margin-top: 10px;
+}
+.validacion img{
+	border:none;
+	float: right;
+}
+.validacion a:link, .validacion a:visited{
+	color:#850709;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+

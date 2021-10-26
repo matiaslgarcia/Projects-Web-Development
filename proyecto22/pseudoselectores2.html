@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pseudoselectores 2</title>
+    <style type="text/css">
+        p{
+            font-family: Gotham, Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            width: 500px;
+            margin: 20px auto 0 auto;
+            padding: 0;
+            
+        }
+        p[name^="mi"]{ /*Con esta expresion afectamos a los parrafos que empiezan con "mi" */
+            background: yellow;
+        }
+        p[name$="mi"]{ /*Con esta expresion afectamos a los parrafos que terminan con "mi" */
+            background: red;
+        }
+
+        p[name*="col"]{/*Con esta expresion afectamos a todos los parrafos que poseen "col" */
+            background: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <p name="micasa">Texto 1</p>
+    <p name="tsunami">Texto 2</p>
+    <p name="color">Texto 3</p>
+    <p name="recol">Texto 4</p>
+    <p name="acolor">Texto 5</p>
+</body>
+
+
+</html>

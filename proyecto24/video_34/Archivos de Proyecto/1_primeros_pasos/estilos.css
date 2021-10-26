@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:rgba(125,228,234,1.00);
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* ESTILOS DEL MENÚ */
+
+nav{
+	float:left;
+	margin:20px 0 0 20px;
+}
+
+nav ul{
+	list-style:none;
+}
+
+nav ul li{
+	display:block;
+	width:200px;
+	background:#fff;
+	margin-bottom:5px;
+	box-shadow:1px 1px 3px #000;
+}
+
+nav ul li:hover{
+	background:rgba(228,228,228,1.00);
+}
+
+nav ul li a:link, nav ul li a:visited{
+	display:block;
+	padding:10px 0;
+	text-decoration:none;
+	text-align:center;
+	color:rgba(28,76,221,1.00);
+}
+
+nav ul li a:hover{
+	color:#000;
+}
+
+/* ESTILOS DE LA MÁSCARA QUE TAPARÁ LA PANTALLA */
+.mascara{
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background:rgba(0,0,0,0.8);
+	z-index:99999;
+	opacity:0;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.mascara:target{
+	opacity:1;
+	pointer-events:auto;
+}
+
+/*ESTILOS DE CADA UNA DE LAS VENTANAS DE LA APLICACION */
+
+.modal{
+	width:400px;
+	position:relative;
+	padding:5px 20px 13px 20px;
+	background:#fff;
+	border-radius:5px;
+	transition:all 500ms ease-in;
+}
+
+.modal img{
+	width:100%;
+	margin-bottom:10px;	
+}
+
+.modal h2{
+	text-align:center;
+	font-weight:lighter;
+	color:#891416;
+	margin-bottom:10px;
+	font-size:1.3em;
+}
+
+.modal p{
+	font-size:1em;
+	line-height:1.3em;
+	text-align:justify;
+}
+
+.close{
+	background:#606061;
+	color:#fff;
+	line-height:25px;
+	position:absolute;
+	right:1px;
+	top:1px;
+	width:24px;
+	text-decoration:none;
+	font-weight:bold;
+	border-radius:3px;
+	text-align:center;
+}
+
+.close:hover{
+	background:#faac58;
+	color:#222;
+}
+
+
+/* COMPORTAMIENTOS Y ANIMACIONES */
+
+.abajo{
+	margin:0 auto;
+}
+
+.mascara:target .abajo{
+	margin:10% auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+

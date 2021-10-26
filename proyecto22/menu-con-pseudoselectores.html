@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Menu con Pseudoselectores</title>
+    <style type="text/css">
+
+        .container{
+            width: 300px;
+            margin: 50px auto;
+        }
+        ul{
+            width: 200px;
+            background: #292929;
+            color: white;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li{
+            padding: 10px;
+            border-bottom: 3px solid blue;
+            border-top: 3px solid orange;
+            font-family: Gotham, Arial, Helvetica, sans-serif;
+            font-size: 1em;
+
+        }
+        ul li:hover{
+            background: #80797a;
+        }
+        
+        ul li:first-child{
+            border-top: none;
+
+        }
+        ul li:last-child{
+            border-bottom: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+</body>
+</html>

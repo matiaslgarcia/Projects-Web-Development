@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Formulario 1</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Contacto</h1>
+
+        <form action="/" method="post" class="primer_form" onSubmit="return validacion() "id="general">
+
+            <label for="nombre">
+                <span>Nombre:</span>
+                <input type="text" name="nombre" id="nombre" required />
+            </label>
+
+            <label for="tipo_consulta">
+                <span>Tipo Consulta:</span>
+                <select name="tipo_consulta" id="tipo_consulta">
+                    <option value="Laboral">Laboral</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Otros">Otros</option>
+                </select>
+            </label>
+           
+
+            <label for="email">
+                <span>Correo Electronico:</span>
+                <input type="email" name="email" id="email" required />
+            </label>
+            
+
+            <label for="tel">
+                <span>Telefono:</span>
+                <input type="text" name="tel" id="tel" required/>
+            </label>
+            
+
+            <label for="mensaje">
+                <span>Mensaje:</span>
+                <textarea name="mensaje" id="mensaje" required></textarea>
+            </label>
+           
+
+            <input type="checkbox" name="acepto" id="acepto " required /> Al enviar el siguiente formulario acepta la politica de proteccion de datos de MI empresa Conforme a la Ley Organica 24/1994 ,de 24 de Noviembre. Si desea oponerse, acceder, cancelar o rectificar sus datos, ponganse en contacto con nosotros dirigiendo un mensaje al correo electronico:<a href="mailto:info@web.com.ar">info@web.com.ar</a><br />
+             <input type="submit" class="button" value="Enviar" />
+        </form>
+    </div> 
+</body>
+</html>

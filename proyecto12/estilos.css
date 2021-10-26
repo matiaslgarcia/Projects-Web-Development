@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:#bbb5b5;
+    font-family: Gotham,"Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 900px;
+    margin: 0 auto;
+    background:#fff;
+    padding-top:10px;
+}
+
+.linea{
+    width: 100%;
+}
+
+figure{
+    float:left;
+    width: 32%;
+    margin-bottom: 10px;
+    margin-left: 1%;
+}
+
+figure img{
+    width: 100%;
+    border-radius: 15px;
+}
+figure img:hover{
+    filter:grayscale(100%);
+    -moz-filter:grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.clearboth{
+    clear:both;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+/*  EFECTOS ESPECIALES Y FILTROS*/
+
+.original:hover{
+    filter: invert(100%);
+    -moz-filter:invert(100%);
+    -webkit-filter: invert(100%);
+}
+.desenfoque{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+}
+
+.grises:hover{
+    filter:none;
+}
+.grises{
+    filter:grayscale(100%);
+    -moz-filter:grayscale(100%);
+    -webkit-filter: grayscale(100%);
+} 
+
+.invertir{
+    filter: invert(100%);
+    -moz-filter:invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.sepia{
+    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
+    -moz-filter:sepia(100%);
+}
+
+.rotacion{
+    filter: hue-rotate(45deg);
+    -webkit-filter: hue-rotate(45deg);
+    -moz-filter:hue-rotate(45deg);
+}
+
+.brillo{
+    filter: brightness(200%);
+    -webkit-filter: brightness(200%);
+    -moz-filter:brightness(200%)
+}
+
+
+.contraste{
+    filter:contrast(200%);
+    -webkit-filter: contrast(200%);
+}
+
+.saturacion{
+    filter: saturate(250%);
+    -webkit-filter: saturate(250%);
+}

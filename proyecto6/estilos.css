@@ -1,0 +1,92 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #C15658;
+}
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+    clear: both;
+}
+
+/*######## FORMULARIO ########*/
+.primer_form {
+    float: left;
+    width: 100%;
+    padding: 30px 30px 20px 25px;
+    box-sizing: border-box;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    background: #fff;
+}
+
+h1 {
+    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px #949494;
+}
+
+.acepto {
+    margin: 0px 0px 5px;
+    text-align: justify;
+}
+
+.primer_form label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+
+    .primer_form label > span {
+        float: left;
+        margin-top: 10px;
+        color: #5E5E5E;
+    }
+
+.primer_form input[type="text"], .primer_form input[type="email"], .primer_form textarea, .primer_form select {
+    color: #555;
+    height: 30px;
+    line-height: 15px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font: normal 14px/14px Arial, Helvetica, sans-serif;
+}
+
+.primer_form textarea {
+    height: 100px;
+    padding-top: 10px;
+}
+
+.primer_form .button {
+    background-color: #696464;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
+    margin-top: 10px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+    .primer_form .button:hover {
+        background-color: #C15658;
+    }

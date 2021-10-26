@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>New York</title>
+        <link rel="stylesheet" href="estilos.css" type="text/css">
+        <script lang="javascript" type="text/javascript">
+            function mostrar1(){
+                document.getElementById('primero').style.display ='block';
+                document.getElementById('segundo').style.display ='none';
+                document.getElementById('tercero').style.display ='none';
+            }
+            function mostrar2(){
+                document.getElementById('segundo').style.display ='block';
+                document.getElementById('primero').style.display ='none';
+                document.getElementById('tercero').style.display ='none';
+            }
+            function mostrar3(){
+                document.getElementById('tercero').style.display ='block';
+                document.getElementById('segundo').style.display ='none';
+                document.getElementById('primero').style.display ='none';
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>New York</h1>
+            <div class="estatua">
+                <img src="images/estatua.png" alt="Estatua de la Libertad">
+            </div>
+            <section>
+                <article id="primero">
+                    <img src="images/foto1.png" alt="Donas en New York">
+                    <p>
+                        <span class="amarillo">Nueva York (en inglés: New York City)</span>  es la ciudad más poblada de los Estados Unidos de América y una de las más pobladas del mundo.
+                        <span class="verde">Desde finales del siglo XIX</span>  es uno de los centros de la economía mundial. 
+                        Nueva York está considerada como una ciudad global, por sus influencias a nivel mundial en los medios de comunicación, en la política, en la educación, en la arquitectura, en el entretenimiento, las artes y la moda.
+                        La influencia artística y cultural de la ciudad es de las más fuertes del mundo. En esta ciudad se encuentra la sede central de la Organización de las Naciones Unidas. 
+                        La gran relevancia de la ciudad a muchos niveles la convierte, junto a Moscú, Pekín, Londres, Tokio y París en una de las ciudades con mayores estadísticas del planeta.
+
+                    </p>
+                </article>
+                
+                <article id="segundo">
+                    <img src="images/foto2.png" alt="Edificio de New York">
+                    <p>
+                        <span class="naranja">Nueva York (en inglés: New York City)</span>  es la ciudad más poblada de los Estados Unidos de América y una de las más pobladas del mundo.
+                        <span class="verde">Desde finales del siglo XIX</span>  es uno de los centros de la economía mundial. 
+                        Nueva York está considerada como una ciudad global, por sus influencias a nivel mundial en los medios de comunicación, en la política, en la educación, en la arquitectura, en el entretenimiento, las artes y la moda.
+                        La influencia artística y cultural de la ciudad es de las más fuertes del mundo. En esta ciudad se encuentra la sede central de la Organización de las Naciones Unidas. 
+                        La gran relevancia de la ciudad a muchos niveles la convierte, junto a Moscú, Pekín, Londres, Tokio y París en una de las ciudades con mayores estadísticas del planeta.
+
+                    </p>
+                </article>
+                <article id="tercero">
+                    <img src="images/foto3.png" alt="Central Park de New York">
+                    <p>
+                        <span class="rojo">Nueva York (en inglés: New York City)</span>  es la ciudad más poblada de los Estados Unidos de América y una de las más pobladas del mundo.
+                        <span class="verde">Desde finales del siglo XIX</span>  es uno de los centros de la economía mundial. 
+                        Nueva York está considerada como una ciudad global, por sus influencias a nivel mundial en los medios de comunicación, en la política, en la educación, en la arquitectura, en el entretenimiento, las artes y la moda.
+                        La influencia artística y cultural de la ciudad es de las más fuertes del mundo. En esta ciudad se encuentra la sede central de la Organización de las Naciones Unidas. 
+                        La gran relevancia de la ciudad a muchos niveles la convierte, junto a Moscú, Pekín, Londres, Tokio y París en una de las ciudades con mayores estadísticas del planeta.
+
+                    </p>
+                </article>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="mostrar1()">Opcion 1</a></li>
+                    <li><a href="#" onclick="mostrar2()">Opcion 2</a></li>
+                    <li><a href="#" onclick="mostrar3()">Opcion 3</a></li>
+                </ul>
+            </nav>
+        <!--fin container-->
+        </div>
+    </body>
+</html>

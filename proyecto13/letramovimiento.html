@@ -1,0 +1,75 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+<title>Letras con Movimiento</title>
+<style type="text/css">
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #e4dcdc;
+}
+.container{
+    width: 800px;
+    margin: 100px auto;
+}
+
+.uno{
+    float:left;
+    width: 200px;
+    height: 300px;
+    background: #4d8fe2;
+    border: 5px solid yellow;
+}
+.uno p{
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 140px;
+    font-size: 19px;
+}
+.dos{
+    float:left;
+    width: 200px;
+    height: 100px;
+    background:pink;
+    border:5px solid white;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.dos p{
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+.tres{
+    float: right;
+    width: 200px;
+    height: 300px;
+    background: green;
+    border:5px solid brown;
+}
+.tres p{
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    transform: rotate(-30deg);
+    margin-top: 100px;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+            <marquee behavior="alternate" direction="right" class="uno"><p>Somos Eficientes</p></marquee>
+            <marquee behavior="alternate" direction="up" class="dos"><p>Incluso</p></marquee>
+            <marquee behavior="alternate" direction="left" class="tres"><p>En los Peores Momentos</p></marquee>
+       
+    </div>
+
+</body>
+
+</html>

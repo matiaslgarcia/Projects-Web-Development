@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mapa de Imágenes</title>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#b6b1b1;
+}
+h1{
+	text-align:center;
+	font-size:1.1em;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+.mapa{
+	width:300px;
+	height:600px;
+	margin:0 auto;
+	background:#fff;
+	border-left:5px solid #000;
+	border-right:5px solid #000;
+	padding-top:20px;
+}
+.mapa img{
+	margin-left:50px;
+	margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+<div class="mapa">
+<h1>Elige el lugar que quieres visitar</h1>
+<img src="images/comunidad_valenciana.gif" usemap="#Map"/>
+<map name="Map">
+  <area shape="poly" coords="136,139,156,115,157,104,180,78,205,34,194,27,187,21,180,9,169,7,155,13,150,7,141,10,137,4,125,14,114,20,120,23,126,32,125,43,120,47,128,53,114,66,102,75,93,90,88,102,69,114,79,129,90,129,89,139,109,148,117,132" href="http://www.dipcas.es/" target="_blank">
+</map>
+</div>
+</body>
+</html>
